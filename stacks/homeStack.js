@@ -10,6 +10,7 @@ export default function HomeStack() {
     <Stack.Navigator
       screenOptions={{
         headerStyle: { backgroundColor: "#649bfa" },
+        headerTitleAlign: "center",
         headerTintColor: "#fff",
       }}
     >
@@ -17,7 +18,7 @@ export default function HomeStack() {
         name="Home"
         component={Home}
         options={{
-          title: "Reviews",
+          title: "Home",
         }}
       />
       <Stack.Screen

@@ -3,15 +3,16 @@ import { StyleSheet } from "react-native";
 export const globalStyles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: "#e7e7e7",
+    flex: 1,
+    backgroundColor: "#fff",
   },
   text: {
     fontFamily: "nunitoBold",
     fontSize: 18,
   },
   homeContainer: {
-    backgroundColor: "#eee",
     alignItems: "center",
+    backgroundColor: "#fff",
     justifyContent: "center",
     flex: 1,
     paddingTop: 10,
@@ -24,22 +25,48 @@ export const globalStyles = StyleSheet.create({
     fontSize: 18,
     textAlign: "left",
   },
+  ratingContainer: {
+    borderWidth: 1,
+    borderColor: "#eee",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 10,
+    padding: 7,
+    width: "100%",
+  },
   rating: {
     fontSize: 20,
     fontWeight: "bold",
-    padding: 10,
-  },
-  review: {
-    padding: 10,
-    backgroundColor: "#ddd",
-    marginTop: 10,
   },
   reviewContainer: {
-    marginTop: 10,
-    padding: 20,
-    backgroundColor: "#ddd",
+    padding: 10,
+    borderRadius: 6,
+    backgroundColor: "#fff",
+    margin: 15,
+    width: 360,
+    elevation: 4,
+    shadowOffset: { width: 4, height: 4 },
+    shadowColor: "#333",
+    shadowRadius: 7,
+    shadowOpacity: 0.4,
+  },
+  flex: {
+    flexDirection: "row",
+    alignItems: "center",
   },
   btn: {
     padding: 20,
+  },
+  aboutText: {
+    fontSize: 18,
+  },
+  input: {
+    borderRadius: 7,
+    borderWidth: 1,
+    borderColor: "#333",
+    fontSize: 18,
+    marginVertical: 10,
+    padding: 10,
   },
 });
