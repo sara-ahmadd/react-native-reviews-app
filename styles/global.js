@@ -69,4 +69,21 @@ export const globalStyles = StyleSheet.create({
     marginVertical: 10,
     padding: 10,
   },
+  errorText: {
+    color: "red",
+    marginBottom: 20,
+    fontSize: 18,
+  },
+  submitBtn: {
+    width: 150,
+    height: 50,
+    textAlign: "center",
+    fontSize: 20,
+    padding: 10,
+    borderRadius: 9,
+    alignSelf: "center",
+    backgroundColor: "#60a9f7",
+    color: "#fff",
+    fontWeight: "bold",
+  },
 });

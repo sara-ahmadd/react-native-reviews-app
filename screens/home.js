@@ -12,7 +12,6 @@ import { globalStyles } from "../styles/global";
 import Card from "../components/card";
 import { Entypo } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
 import ReviewForm from "./reviewForm.js";
 
 export default function Home({ navigation }) {
@@ -24,25 +23,25 @@ export default function Home({ navigation }) {
 
   const [reviews, setReviews] = useState([
     {
-      title: "Title 1",
+      title: "Review 1",
       body: `commodo adipisicing consectetur excepteur pariatur minim quis consequat est.Pariatur `,
       rating: "5",
       id: generateId + 1,
     },
     {
-      title: "Title 2",
+      title: "Review 2",
       body: `commodo adipisicing consectetur excepteur pariatur minim quis consequat est.Pariatur `,
       rating: "2",
       id: generateId + 2,
     },
     {
-      title: "Title 3",
+      title: "Review 3",
       body: `commodo adipisicing consectetur excepteur pariatur minim quis consequat est.Pariatur `,
       rating: "5",
       id: generateId + 3,
     },
     {
-      title: "Title 4",
+      title: "Review 4",
       body: `commodo adipisicing consectetur excepteur pariatur minim quis consequat est.Pariatur `,
       rating: "3",
       id: generateId + 4,
@@ -83,15 +82,6 @@ export default function Home({ navigation }) {
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => goToReview(item)}>
             <Card style={globalStyles.reviewContainer}>
-              <MaterialIcons
-                onPress={() => deleteReview(item)}
-                name="delete-forever"
-                size={24}
-                style={{
-                  marginRight: 10,
-                }}
-                color="black"
-              />
               <Text style={globalStyles.title}> {item.title}</Text>
             </Card>
           </TouchableOpacity>
