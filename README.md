@@ -1,5 +1,7 @@
 # react-native-reviews-app
 - A simple mobile application, where the user can add reviews about different games.
+- Built with Expo cli.
+- Libraries used :react-navigation, formik, yup.
 ## Install Dependencies : 
 ```
 npx expo install
